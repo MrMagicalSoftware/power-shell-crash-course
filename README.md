@@ -221,6 +221,7 @@ $ConfirmPreference = "High"
 
 _________________________________________
 
+# Strutture dati 
 
 
 
@@ -299,6 +300,84 @@ $matrix = @(
 # Access elements in a 2D array
 $element = $matrix[1][2] # Accessing the element at row 2, column 3
 ```
+
+
+________________________________________________________________________
+
+
+
+**hash table**
+
+
+
+In PowerShell, a hash table is a data structure that stores key-value pairs. Each key in a hash table must be unique, and each key is associated with a specific value. Hash tables are also known as dictionaries or associative arrays in other programming languages. Here's how you can create and use a hash table in PowerShell:
+
+### Creating a Hash Table:
+
+```powershell
+# Create an empty hash table
+$hashTable = @{}
+
+# Create a hash table with initial key-value pairs
+$hashTable = @{
+    "Name" = "John"
+    "Age" = 30
+    "City" = "New York"
+}
+```
+
+### Accessing Values in a Hash Table:
+
+```powershell
+# Access values using keys
+Write-Host "Name: $($hashTable['Name'])"
+Write-Host "Age: $($hashTable['Age'])"
+Write-Host "City: $($hashTable['City'])"
+```
+
+### Adding or Modifying Entries:
+
+```powershell
+# Add or update key-value pairs
+$hashTable['Occupation'] = "Engineer"
+$hashTable['Age'] = 35  # Update existing value
+```
+
+### Removing Entries:
+
+```powershell
+# Remove a key-value pair
+$hashTable.Remove('City')
+```
+
+### Iterating Over a Hash Table:
+
+```powershell
+# Iterate over each key-value pair
+foreach ($key in $hashTable.Keys) {
+    Write-Host "$key: $($hashTable[$key])"
+}
+```
+
+### Checking for Existence:
+
+```powershell
+# Check if a key exists
+if ($hashTable.ContainsKey('Name')) {
+    Write-Host "Name exists"
+}
+
+# Check if a value exists
+if ($hashTable.ContainsValue('New York')) {
+    Write-Host "New York exists"
+}
+```
+
+Hash tables are commonly used in PowerShell for storing configuration settings, organizing data, or passing parameters to functions. They provide a flexible and efficient way to work with key-value pairs.
+
+
+
+
 
 
 
