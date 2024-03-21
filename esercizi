@@ -1,0 +1,121 @@
+Esercizi
+
+
+
+### Variabili e Operatori:
+
+1. Dichiarare una variabile di tipo stringa e assegnarle un valore.
+2. Dichiarare una variabile di tipo numerico e assegnarle un valore.
+3. Creare una variabile booleana e assegnarle un valore.
+4. Utilizzare l'operatore di assegnazione per modificare il valore di una variabile.
+5. Concatenare due stringhe utilizzando l'operatore di concatenazione.
+
+### Strutture di Controllo:
+
+6. Utilizzare un'istruzione if per controllare una condizione e visualizzare un messaggio in base a essa.
+7. Utilizzare un'istruzione if-else per gestire due possibili percorsi di esecuzione.
+8. Utilizzare un'istruzione switch per gestire più casi in base al valore di una variabile.
+9. Creare un ciclo for per contare da 1 a 10 e visualizzare ogni numero.
+10. Utilizzare un ciclo foreach per iterare su un array di nomi e visualizzare ciascun nome.
+
+### Funzioni:
+
+11. Creare una funzione che accetti due parametri numerici e restituisca la loro somma.
+12. Creare una funzione che accetti una stringa come parametro e restituisca la lunghezza della stringa.
+13. Creare una funzione che accetti un array di numeri come parametro e restituisca la loro somma.
+14. Creare una funzione che accetti un numero come parametro e restituisca True se è pari, altrimenti False.
+15. Creare una funzione che accetti un array di stringhe come parametro e restituisca la stringa più lunga.
+
+### Array:
+
+16. Creare un array di numeri e calcolare la somma di tutti gli elementi.
+17. Creare un array di stringhe e visualizzare l'elemento in posizione 3.
+18. Aggiungere un nuovo elemento a un array esistente.
+19. Unire due array esistenti in uno nuovo.
+20. Ordinare un array di numeri in ordine decrescente.
+
+### File System:
+
+21. Creare un nuovo file di testo utilizzando PowerShell.
+22. Scrivere del testo in un file di testo esistente utilizzando PowerShell.
+23. Leggere il contenuto di un file di testo utilizzando PowerShell.
+24. Rinominare un file esistente utilizzando PowerShell.
+25. Eliminare un file utilizzando PowerShell.
+
+### Gestione dei Processi:
+
+26. Ottenere l'elenco dei processi in esecuzione sul sistema.
+27. Trovare e terminare un processo specifico utilizzando il suo nome.
+28. Avviare un nuovo processo utilizzando PowerShell.
+29. Ottenere informazioni dettagliate su un processo specifico utilizzando PowerShell.
+30. Monitorare continuamente l'utilizzo della CPU utilizzando PowerShell.
+
+### Gestione del Registro di Sistema:
+
+31. Creare una nuova chiave di registro utilizzando PowerShell.
+32. Scrivere un valore in una chiave di registro esistente utilizzando PowerShell.
+33. Leggere un valore dalla chiave di registro utilizzando PowerShell.
+34. Eliminare una chiave di registro utilizzando PowerShell.
+35. Elenca tutte le sottotesti di una chiave di registro utilizzando PowerShell.
+
+### Gestione di Servizi:
+
+36. Ottenere l'elenco dei servizi installati sul sistema utilizzando PowerShell.
+37. Avviare un servizio specifico utilizzando PowerShell.
+38. Arrestare un servizio specifico utilizzando PowerShell.
+39. Impostare un servizio per avviare automaticamente all'avvio del sistema utilizzando PowerShell.
+40. Ottenere lo stato corrente di un servizio specifico utilizzando PowerShell.
+
+### Gestione di Active Directory:
+
+41. Creare un nuovo utente in Active Directory utilizzando PowerShell.
+42. Modificare le proprietà di un utente esistente in Active Directory utilizzando PowerShell.
+43. Abilitare un account utente in Active Directory utilizzando PowerShell.
+44. Disabilitare un account utente in Active Directory utilizzando PowerShell.
+45. Eliminare un utente da Active Directory utilizzando PowerShell.
+
+### Gestione di Reti:
+
+46. Pingare un indirizzo IP specifico utilizzando PowerShell.
+47. Ottenere informazioni dettagliate sull'adattatore di rete utilizzando PowerShell.
+48. Modificare l'indirizzo IP di un computer utilizzando PowerShell.
+49. Abilitare o disabilitare un adattatore di rete utilizzando PowerShell.
+50. Elenca tutte le connessioni di rete attive sul sistema utilizzando PowerShell.
+
+
+
+_______________________________________________________________________________________________
+
+
+
+
+1. **Conteggio crescente**: Scrivi un ciclo for che conta da 1 a 10 e visualizza ogni numero.
+   
+2. **Conteggio decrescente**: Scrivi un ciclo for che conta da 10 a 1 e visualizza ogni numero.
+
+3. **Tabellina del 5**: Utilizza un ciclo for per generare la tabellina del 5 (da 5 a 50) e visualizzarla.
+
+4. **Numeri pari**: Utilizza un ciclo for per generare e visualizzare tutti i numeri pari compresi tra 1 e 20.
+
+5. **Stampa array**: Scrivi un ciclo foreach per iterare su un array di nomi e visualizzare ciascun nome.
+
+6. **Numeri primi**: Scrivi un ciclo for per identificare e visualizzare tutti i numeri primi compresi tra 1 e 100.
+
+7. **Somma degli elementi**: Utilizza un ciclo foreach per calcolare la somma di tutti gli elementi di un array di numeri.
+
+8. **Stampa pattern**: Utilizza un ciclo for per stampare un pattern a forma di triangolo, utilizzando asterischi (`*`). Ad esempio:
+   ```
+   *
+   **
+   ***
+   ****
+   ***** 
+   ```
+
+9. **Esponenti di 2**: Utilizza un ciclo while per generare e visualizzare i primi 10 esponenti di 2 (2^0, 2^1, 2^2, ..., 2^9).
+
+10. **Input utente**: Scrivi un ciclo do-while che chiede all'utente di inserire una password e continua a chiedere finché la lunghezza della password è inferiore a 8 caratteri.
+
+
+
+
