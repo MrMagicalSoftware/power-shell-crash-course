@@ -715,6 +715,96 @@ do {
 } while ($i -le 5)
 ```
 
+__________________________________________
+
+
+# Functions
+
+
+
+
+
+### Defining a Function:
+
+```powershell
+function MyFunction {
+    # Function code goes here
+    Write-Output "This is my function"
+}
+```
+
+You can also define functions with parameters:
+
+```powershell
+function Greet {
+    param (
+        [string] $Name
+    )
+    Write-Output "Hello, $Name!"
+}
+```
+
+### Calling a Function:
+
+Once you've defined a function, you can call it by simply using its name followed by parentheses:
+
+```powershell
+MyFunction
+```
+
+For functions with parameters, you need to pass values when calling the function:
+
+```powershell
+Greet -Name "John"
+```
+
+### Returning Values:
+
+Functions can return values using the `return` keyword or by simply outputting values using `Write-Output`:
+
+```powershell
+function Add {
+    param (
+        [int] $a,
+        [int] $b
+    )
+    return ($a + $b)
+}
+
+$result = Add -a 5 -b 3
+Write-Output "Result: $result"
+```
+
+### Advanced Function Features:
+
+PowerShell also supports advanced function features such as parameter sets, pipeline input, and validation attributes. Here's an example:
+
+```powershell
+function Get-User {
+    [CmdletBinding()]
+    param (
+        [Parameter(Position = 0, Mandatory)]
+        [ValidateNotNullOrEmpty()]
+        [string] $Username,
+
+        [Parameter(Position = 1)]
+        [string] $Domain = "Contoso"
+    )
+
+    process {
+        $fullUsername = "$Domain\$Username"
+        Write-Output "Retrieving information for user: $fullUsername"
+        # Code to retrieve user information
+    }
+}
+```
+
+
+
+
+
+
+
 
 
 
