@@ -800,7 +800,87 @@ function Get-User {
 ```
 
 
+____________________________________________________
 
+
+# String
+
+
+### Creating Strings:
+
+```powershell
+$string1 = 'Single quoted string'
+$string2 = "Double quoted string"
+```
+
+### String Interpolation:
+
+With double-quoted strings, you can interpolate variables directly into the string:
+
+```powershell
+$name = "John"
+Write-Output "Hello, $name!"
+```
+
+### Special Characters:
+
+Certain characters have special meanings in strings. To include them literally, you might need to escape them with a backtick (`):
+
+```powershell
+$string = "This string contains `"quotes`" and a backtick (`)"
+```
+
+### Multiline Strings:
+
+You can create multiline strings using here-strings:
+
+```powershell
+$multiline = @"
+This is a
+multiline
+string
+"@
+```
+
+### String Manipulation:
+
+PowerShell provides various methods and operators for manipulating strings, such as:
+
+- **Substring**: Extracting part of a string.
+- **Replace**: Replacing occurrences of a substring.
+- **Split**: Splitting a string into an array of substrings based on a delimiter.
+- **Join**: Combining an array of strings into a single string with a specified delimiter.
+- **ToLower** and **ToUpper**: Converting a string to lowercase or uppercase.
+- **Trim**: Removing leading and trailing whitespace from a string.
+- **-join** operator: Combining multiple strings into one.
+
+```powershell
+$string = "Hello, World!"
+$substring = $string.Substring(7)
+$newString = $string.Replace("Hello", "Hi")
+$parts = $string.Split(",")
+$joinedString = $parts -join " and "
+```
+
+### String Formatting:
+
+PowerShell also supports string formatting using `-f` operator or `String.Format` method:
+
+```powershell
+$name = "John"
+$age = 30
+$formatted = "Name: {0}, Age: {1}" -f $name, $age
+```
+
+### Working with Special Characters:
+
+You can insert special characters like newline (`n`) or tab (`t`) using escape sequences:
+
+```powershell
+$newline = "First line`nSecond line"
+```
+
+PowerShell provides rich functionality for working with strings, making it versatile for various scripting and automation tasks.
 
 
 
